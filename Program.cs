@@ -61,7 +61,6 @@ namespace Pirates
                            
                             Console.WriteLine($"{currCity} -> Population: {currPeople} citizens, Gold: {currGold} kg");
                         }
-
                     }
                     else // if (peopleByCity.Count <= 0)
                     {
@@ -73,8 +72,7 @@ namespace Pirates
 
                 string[] comandsParts = newLine.Split("=>", StringSplitOptions.RemoveEmptyEntries);
                 string command = comandsParts[0];
-                string nameCity = comandsParts[1];
-                
+                string nameCity = comandsParts[1];                
 
                 if (command == "Plunder")
                 {                   
@@ -104,8 +102,7 @@ namespace Pirates
                         continue;
                     }
                     //gold >=0
-
-                    goldByCity[nameCity] += goldKgs;                   
+                    goldByCity[nameCity] += goldKgs;                  
 
                     Console.WriteLine($"{goldKgs} gold added to the city treasury. {nameCity} now has {goldByCity[nameCity]} gold.");
                 }
