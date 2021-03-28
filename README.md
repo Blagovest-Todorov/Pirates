@@ -1,2 +1,2 @@
 # Pirates
-softUni C# fundametals soldev FinalExam task
+softUni C# fundametals solved FinalExam task
